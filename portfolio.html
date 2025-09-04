@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("B5KRjMfJq-EprvJqK");
+    })();
+    </script>
+
+</head>
+<body class="min-h-screen bg-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-800 shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <span class="text-xl font-bold text-white">Portfolio</span>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-white">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-white">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <button class="md:hidden text-white" id="menuButton">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="hidden md:hidden" id="mobileMenu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-800">
+                <div class="outer"></div>
+                <a href="#home" class="block px-3 py-2 text-gray-300 hover:text-white">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-300 hover:text-white">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-300 hover:text-white">Skills</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-300 hover:text-white">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gray-900 pt-16">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Rahman Mansuri</h1>
+            <p id="title" class="text-xl md:text-2xl text-gray-400 mb-4"></p>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto px-4">Passionate about building efficient and scalable Java applications. A Bachelor's of Computer student eager to learn, grow, and contribute to innovative projects</p>
+            
+            <div class="home-sci">
+                <!-- <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a> -->
+                <a href="https://github.com/RahmanMansuri" class="text-gray-300 hover:text-blue-400 transition duration-300"><i class="fab fa-github text-2xl"></i>
+                <a href="https://wa.me/9516949849"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/rahman-mansuri-735a64319/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition duration-300">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">About Me</h2>
+            <div class="flex flex-col items-center space-y-8">
+                <div class="w-48 h-48 rounded-full overflow-hidden shadow-xl">
+                    <img src="MyPhoto.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="max-w-2xl text-center">
+                    <p class="text-gray-300 leading-relaxed">
+                        I am currently persuing a Bachelor's degree in Computer Applicatons, specializing in Java development. 
+                        I have a strong foundation in core Java concepts, Spring Framework, and database management. 
+                        I developed several projects that demonstrate my ability to write clean, efficient code. 
+                        I'm particularly interested in backend development and API design. 
+                        Currently seeking opportunities to apply my skills in a professional environment and contribute 
+                        to meaningful projects while growing as a developer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+   <section id="skills" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 text-white">Skills & Technologies</h2>
+            
+            <!-- Frontend Skills -->
+            <div class="mb-12">
+                <div class="category-header rounded-lg p-4 mb-6 border border-gray-700">
+                    <div class="flex items-center justify-center">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-code text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Frontend Development</h3>
+                    </div>
+                </div>
+                <div class="skill-grid" id="frontendSkills">
+                    <!-- Frontend skills will be added here -->
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="mb-12">
+                <div class="category-header rounded-lg p-4 mb-6 border border-gray-700">
+                    <div class="flex items-center justify-center">
+                        <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-server text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Backend Development</h3>
+                    </div>
+                </div>
+                <div class="skill-grid" id="backendSkills">
+                    <!-- Backend skills will be added here -->
+                </div>
+            </div>
+
+            <!-- Database Skills -->
+            <div class="mb-12">
+                <div class="category-header rounded-lg p-4 mb-6 border border-gray-700">
+                    <div class="flex items-center justify-center">
+                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-database text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Database Management</h3>
+                    </div>
+                </div>
+                <div class="skill-grid" id="databaseSkills">
+                    <!-- Database skills will be added here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsContainer">
+                <!-- Projects will be added dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">Get in Touch</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <form class="space-y-4" id="contactForm">
+                        <div>
+                            <label class="block text-gray-300 mb-2">Name</label>
+                            <input id="name" type="text" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your name" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-2">Email</label>
+                            <input id="email" type="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your email" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 mb-2">Message</label>
+                            <textarea id="message" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 h-32 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your message" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                        <h3 class="text-xl font-bold mb-4 text-white">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-envelope text-blue-400 mr-2"></i>
+                                <span>rehmanmansuri27@gmail.com</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/RahmanMansuri" class="text-gray-300 hover:text-blue-400 transition duration-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/rahman-mansuri-735a64319/" class="text-gray-300 hover:text-blue-400 transition duration-300">
+                                    <i class="fab fa-linkedin text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Rahman Mansuri. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

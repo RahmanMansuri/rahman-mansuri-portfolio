@@ -1,0 +1,210 @@
+/*style.css*/
+#outer{
+    height: 30px;
+    width: 60px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+}
+
+#inner{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    
+}
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #2563EB;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    color: #2563EB;
+} 
+
+.home-sci a:hover{
+    background-color: #2563EB;
+    color: #081b29;
+    box-shadow: 0 0 20px #2563EB;
+}
+
+
+:root {
+    --primary-blue: #2563eb;
+    --hover-blue: #1d4ed8;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Skill bar animation */
+.skill-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(139, 92, 246, 0.1));
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(139, 92, 246, 0.2));
+        }
+
+        .skill-icon {
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover .skill-icon {
+            transform: rotate(10deg) scale(1.1);
+            color: #60a5fa;
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, #1e293b, #334155);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .category-header:hover::before {
+            left: 100%;
+        }
+
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .skill-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+        @media (max-width: 768px) {
+            .skill-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+/* Project card hover effects */
+.project-card {
+            transition: all 0.4s ease;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(139, 92, 246, 0.05));
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(37, 99, 235, 0.4);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(139, 92, 246, 0.1));
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-icon {
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover .project-icon {
+            transform: rotate(5deg) scale(1.1);
+            color: #60a5fa;
+        }
+
+        .tech-tag {
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(139, 92, 246, 0.2));
+        }
+
+        .tech-tag:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.4), rgba(139, 92, 246, 0.4));
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .floating-animation {
+            animation: float 8s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .view-project-btn {
+            transition: all 0.3s ease;
+            background: linear-gradient(45deg, #2563eb, #3b82f6);
+        }
+
+        .view-project-btn:hover {
+            background: linear-gradient(45deg, #1d4ed8, #2563eb);
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+        }
+
+        .project-title {
+            background: linear-gradient(45deg, #ffffff, #e2e8f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+/* Form input animations */
+.form-input:focus {
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Social icon hover effects */
+.social-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+    transition: opacity 0.3s ease;
+}
