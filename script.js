@@ -1,4 +1,4 @@
-// script.js
+ // script.js
 // Skills data for a Java fresher
 
 const text = "Java Developer";
